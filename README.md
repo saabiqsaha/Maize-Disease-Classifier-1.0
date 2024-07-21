@@ -21,7 +21,7 @@ Machine learning projects, including those involving deep learning, adhere to a 
 ### DATA COLLECTION
 **Description of Dataset**
 The dataset for this project, sourced from Kaggle, includes images of maize plants with various diseases. The data was split using a train-test split method, allocating 70% for training and 30% for validation/testing to ensure robust model performance.
-![Sample images from the Dataset](https://drive.google.com/uc?export=view&id=10XGh64TyRWrzTbSn01QD-EPCK0SpiFiZ)
+![Sample images from the Dataset]()
 *Sample images from the PlantVillage Dataset*
 
 
