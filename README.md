@@ -56,11 +56,11 @@ Base Model: MobileNet
 **Output Layer:** Utilizes softmax activation to classify the different maize diseases.
 
 The details are listed in the table below:
-![Hyperparameter specifications](https://drive.google.com/uc?export=view&id=1zyeDadSd_GdbF-oUyM_C3W-vXNIyIOL-)
+![Hyperparameter specifications]()
 
 
 A summary of the entire Network Architecture is shown below:
-![Model summary](https://drive.google.com/file/d/1t0aQV7IBtZxBgGIx-yc6o0fJV0lnXjrP/view?usp=drive_link)
+![Model summary]()
 
 
 
@@ -68,14 +68,14 @@ A summary of the entire Network Architecture is shown below:
 
 Training and evaluation were conducted on Google Colab, leveraging its cloud-based environment for enhanced computational power. The model was trained over 20 epochs with early stopping to prevent overfitting. By the 20th epoch, the model achieved training and validation accuracies of 93.58% and 91.29%, respectively.
 
-![model evaluation](https://drive.google.com/uc?export=view&id=1TKNHL1yXLjEEsJwmRuWnkcnJeQC8cNuV)
+![model evaluation]()
 
 *Model Training and Validation Accuracies (left) and Training and Validation loss (right) as a function of epoch number*
 
 
 
 Additionally, while validation accuracy offers insight into how the model generalizes to unfamiliar data, the ultimate assessment lies in predictions made on unseen data (test data). Graphical depictions of the model’s predictions on a subset of the test data are provided below, accompanied by the model’s confidence score for each prediction.
-![Model predictions](https://drive.google.com/uc?export=view&id=130pyPQj6NIJrfLyvihq6Etb4C6TrHoSP)
+![Model predictions]()
 
 
 
@@ -85,7 +85,7 @@ After training, the model was converted to TensorFlow Lite for optimal deploymen
 - **Pruning:** Removed less important connections, reducing model size and accelerating inference without compromising accuracy.
 - **Quantization:** Reduced the precision of numerical values, shrinking the model from 8MB to approximately 2.4MB, speeding up inference and reducing memory demands.
 
-![Quantized Model](https://drive.google.com/uc?export=view&id=1QI1i7SySZnmgJ8gdiuaUpPe7fRSInZV5)
+![Quantized Model]()
 
 ### Model Verification
 Post-conversion, the model’s accuracy was validated to ensure the optimization procedures did not adversely affect its proficiency in identifying crop diseases. The TensorFlow Lite conversion process resulted in a lightweight yet accurate model suitable for mobile applications.
@@ -95,7 +95,7 @@ Post-conversion, the model’s accuracy was validated to ensure the optimization
 The deployment of the crop disease identification solution culminated in a user-friendly mobile app built using React Native into which the TensorFlow Lite model was integrated. 
 
 <div align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1g5qHpPwDmXyO1uaXyYGREtKADuzw1M_a" alt="Interface" height = "450" width="400">
+  <img src="" alt="Interface" height = "450" width="400">
   <p><em>App User Interface</em></p>
 </div>
 
@@ -104,21 +104,21 @@ The deployment of the crop disease identification solution culminated in a user-
 - Real-Time Inference: The TensorFlow Lite model analyzes the image to identify potential diseases.
 
 <div align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1OUkugtCPtTCXfs5UuvzZImNHsU9oo7Qy" alt="Inferfence" height = "500" width="400">
+  <img src="" alt="Inferfence" height = "500" width="400">
 </div>
 
 
 - Prediction Display: Shows detected diseases with confidence levels in clear format
 
 <div align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1AI7aGpPiYLaiEATqFV34K7Rb5ngvzFjm" alt="predict" height = "500" width="400">
+  <img src="" alt="predict" height = "500" width="400">
 </div>
 
 
 - Guidance and Recommendations: Offers practical steps for disease management and treatment
 
  <div align="center">
-   <img src="https://drive.google.com/uc?export=view&id=1yOq99VvbRlVW6Zt43fn4kxDlqEzJGptm" alt="Interface" height = "550" width="400">
+   <img src="" alt="Interface" height = "550" width="400">
  </div>
 
 
