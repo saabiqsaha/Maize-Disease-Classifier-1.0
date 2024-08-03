@@ -5,11 +5,12 @@ from PIL import Image
 from utils import classify
 
 #set title
-st.title('Maize Disease Classification')
+st.title('Maize Disease Classifier')
+st.text('by Mohammed Saabiq Saha')
 
 #set header
 st.header('upload an image of a maize skin')
-st.text('by Mohammed Saabiq Saha')
+
 
 #upload file
 file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
