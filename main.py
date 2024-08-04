@@ -6,7 +6,7 @@ from utils import classify
 
 #set title
 st.title('Maize Disease Classifier')
-st.text('Mohammed Saabiq Saha')
+st.text('Mohammed Saha')
 
 #set header
 st.header('upload an image of a maize skin')
