@@ -7,7 +7,6 @@ from utils import classify
 #set title
 st.title('Maize Disease Classifier')
 
-
 #set header
 st.header('upload an image of a maize skin')
 
