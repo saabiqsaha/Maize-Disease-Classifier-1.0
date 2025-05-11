@@ -10,7 +10,7 @@ st.title('Maize Disease Classifier')
 
 #set header
 st.header('upload an image of a maize skin')
-st.text('by Mohammed Saha')
+st.text('by Mohammed Abdulai')
 
 
 #upload file
