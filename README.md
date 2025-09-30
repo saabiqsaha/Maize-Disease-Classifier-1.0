@@ -1,39 +1,54 @@
 # Maize Disease Classification Model 🌽🤖
 
-This project develops a MobileNet-based machine learning model to detect maize diseases, providing actionable insights for farmers.
+I built a deep learning application to help farmers detect diseases in maize plants using computer vision. The model was trained on thousands of images of healthy and diseased maize leaves to provide instant, accurate diagnoses.
 
 ## Contributors
-- Mohammed Saabiq Saha: [@saabiqsaha](https://github.com/Sahastudios1)
+- Mohammed Saabiq Saha: [@saabiqsaha](https://github.com/saabiqsaha)
+
+## Overview
+This project uses MobileNet-V2 to classify maize plant diseases, enabling farmers to quickly identify crop health issues and take appropriate action.
 
 ## Objectives
-- Collect maize disease data.
-- Train a MobileNet model for disease identification.
-- Build a Streamlit-based frontend.
-- Deploy a TensorFlow Lite model in a mobile app.
+- Collect and preprocess maize disease image data
+- Train a lightweight MobileNet model for disease identification
+- Build an intuitive Streamlit web interface
+- Deploy a TensorFlow Lite model for mobile use
 
 ## Workflow
-1. **Data Collection:** Images sourced from Kaggle, split 70% training, 30% testing.
-2. **Pre-Processing:** Images resized to 224x224, pixel values normalized, and augmented with flips, rotations, etc.
-3. **Model Training:** MobileNet-V2 fine-tuned with custom layers for maize disease classification.
+1. **Data Collection:** Images sourced from Kaggle, split 70% training, 30% validation
+2. **Pre-Processing:** Images resized to 224x224, normalized, and augmented (flips, rotations, zoom)
+3. **Model Training:** Fine-tuned MobileNet-V2 with custom classification layers
 
-## Model Design
-- **Base Model:** MobileNet-V2 for efficiency and accuracy.
-- **Custom Layers:** Dense (128 neurons, ReLU), Dropout (50%), Softmax output.
-- **Hyperparameters:** Learning rate: 0.001, Batch size: 16, Epochs: 50, Optimizer: Adam.
+## Model Architecture
+- **Base Model:** MobileNet-V2 (pre-trained on ImageNet)
+- **Custom Layers:** 
+  - Dense layer (128 neurons, ReLU activation)
+  - Dropout (50% to prevent overfitting)
+  - Softmax output layer for multi-class classification
+- **Hyperparameters:** 
+  - Learning rate: 0.001
+  - Batch size: 16
+  - Epochs: 50
+  - Optimizer: Adam
 
 ## Results
 - **Training Accuracy:** 93.58%
 - **Validation Accuracy:** 91.29%
-- **Optimization:** TensorFlow Lite conversion with pruning and quantization reduced model size to 2.4MB.
+- **Model Size:** 2.4MB (after TensorFlow Lite optimization with pruning and quantization)
 
 ## Deployment
-- **Mobile App:** Built with React Native, integrates TensorFlow Lite for real-time inference.
-- **Features:** Image upload, disease prediction with confidence scores, and treatment recommendations.
+- **Web App:** Built with Streamlit for easy farmer access
+- **Mobile App:** React Native application with TensorFlow Lite integration
+- **Features:** 
+  - Image upload functionality
+  - Real-time disease prediction with confidence scores
+  - Treatment recommendations based on diagnosis
 
-<div align="center">
-  <img src="" alt="App Interface" height="450" width="400">
-  <p><em>App User Interface</em></p>
-</div>
+## How It Works
+1. Farmer uploads image of maize leaf
+2. Model performs real-time inference
+3. System displays disease prediction with confidence level
+4. Provides actionable treatment recommendations
 
 ## Key Visuals
 - **Workflow:** ![Machine Learning Workflow](https://drive.google.com/uc?export=view&id=1ZviuEP_vGuBGIhExYLygphSfWbNp1t_W)
@@ -43,15 +58,6 @@ This project develops a MobileNet-based machine learning model to detect maize d
 - **Quantized Model:** ![Quantized Model]()
 - **Predictions:** ![Predictions]()
 
-## User Interaction
-1. Upload crop leaf images.
-2. Real-time inference identifies diseases.
-3. Displays predictions with confidence levels.
-4. Provides actionable recommendations.
+---
 
-<div align="center">
-  <img src="" alt="Inference" height="500" width="400">
-</div>
-
-
-
+**Live Demo:** [Try the Streamlit App](https://maize-disease-classifier.streamlit.app/)
